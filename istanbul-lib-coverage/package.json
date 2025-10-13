@@ -1,25 +1,47 @@
 {
-    "name": "@types/istanbul-lib-coverage",
-    "version": "2.0.6",
-    "description": "TypeScript definitions for istanbul-lib-coverage",
-    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/istanbul-lib-coverage",
-    "license": "MIT",
-    "contributors": [
-        {
-            "name": "Jason Cheatham",
-            "githubUsername": "jason0x43",
-            "url": "https://github.com/jason0x43"
-        }
-    ],
-    "main": "",
-    "types": "index.d.ts",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
-        "directory": "types/istanbul-lib-coverage"
-    },
-    "scripts": {},
-    "dependencies": {},
-    "typesPublisherContentHash": "36c823c8b3f66dab91254b0f7299de71768ad8836bfbfcaa062409dd86fbbd61",
-    "typeScriptVersion": "4.5"
+  "name": "istanbul-lib-coverage",
+  "version": "3.2.2",
+  "description": "Data library for istanbul coverage objects",
+  "author": "Krishnan Anantheswaran <kananthmail-github@yahoo.com>",
+  "main": "index.js",
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "nyc mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "nyc": "^15.0.0-beta.2"
+  },
+  "karmaDeps": {
+    "browserify-istanbul": "^0.2.1",
+    "karma": "^0.13.10",
+    "karma-browserify": "^4.2.1",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-coverage": "^0.4.2",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "phantomjs": "^1.9.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/istanbuljs/istanbuljs.git",
+    "directory": "packages/istanbul-lib-coverage"
+  },
+  "keywords": [
+    "istanbul",
+    "coverage",
+    "data"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/istanbuljs/istanbuljs/issues"
+  },
+  "homepage": "https://istanbul.js.org/",
+  "engines": {
+    "node": ">=8"
+  }
 }
